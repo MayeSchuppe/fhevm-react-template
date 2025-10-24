@@ -17,6 +17,16 @@ This repository contains a universal FHEVM SDK that makes building confidential 
 - **Zero Configuration**: Sensible defaults with easy customization
 - **Production Ready**: Battle-tested encryption and decryption flows
 
+## 🌐 Live Demonstration
+
+**Website**: [https://fhe-recipe-protection.vercel.app/](https://fhe-recipe-protection.vercel.app/)
+
+**Smart Contract Address**: `0x72E13974c2158A875bAdbc860bfe7A3d932AA612`
+
+**Network**: Sepolia Testnet (Chain ID: 11155111)
+
+**Etherscan**: [View Contract](https://sepolia.etherscan.io/address/0x72E13974c2158A875bAdbc860bfe7A3d932AA612)
+
 ## 📦 Project Structure
 
 ```
