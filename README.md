@@ -27,6 +27,8 @@ This repository contains a universal FHEVM SDK that makes building confidential 
 
 **Etherscan**: [View Contract](https://sepolia.etherscan.io/address/0x72E13974c2158A875bAdbc860bfe7A3d932AA612)
 
+**Video**: demo.mp4
+
 ## 📦 Project Structure
 
 ```
@@ -47,12 +49,32 @@ fhevm-react-template/
 │       │       └── helpers.ts
 │       └── package.json
 │
-├── examples/
-│   ├── nextjs-app/            # Next.js example (REQUIRED)
-│   ├── react-app/             # React example
-│   └── recipe-protection/     # Real-world dApp example
+├── templates/                 # Template examples (symlink to examples)
+│   ├── nextjs/               # Next.js template
+│   ├── react/                # React template
+│   └── recipe-protection/    # Real-world dApp
 │
-└── README.md                  # This file
+├── examples/                 # Example implementations
+│   ├── nextjs-app/          # Complete Next.js example (REQUIRED)
+│   │   ├── src/
+│   │   │   ├── app/         # Next.js App Router
+│   │   │   │   ├── api/     # API routes (FHE operations)
+│   │   │   │   ├── layout.tsx
+│   │   │   │   └── page.tsx
+│   │   │   ├── components/  # React components
+│   │   │   │   ├── ui/      # UI components (Button, Input, Card)
+│   │   │   │   ├── fhe/     # FHE components (Provider, Demos)
+│   │   │   │   └── examples/ # Use case examples (Banking, Medical)
+│   │   │   ├── lib/         # Utility libraries
+│   │   │   │   ├── fhe/     # FHE client, server, keys
+│   │   │   │   └── utils/   # Security, validation
+│   │   │   ├── hooks/       # Custom React hooks
+│   │   │   └── types/       # TypeScript types
+│   │   └── package.json
+│   ├── react-app/           # React standalone example
+│   └── recipe-protection/   # Real-world dApp example
+│
+└── README.md                # This file
 ```
 
 ## 🚀 Quick Start
@@ -83,6 +105,15 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
+
+**Features Included:**
+- Complete SDK integration with FHEProvider context
+- Encryption/Decryption demos with multiple data types
+- Homomorphic computation demonstrations
+- Key management interface
+- Real-world examples: Banking (confidential balances) and Medical (encrypted health records)
+- API routes for FHE operations
+- Full TypeScript support with path aliases
 
 #### React Application
 
