@@ -1,0 +1,185 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.app-header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.app-main {
+  flex: 1;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.wallet-connect,
+.encryption-demo {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-connect h2,
+.encryption-demo h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #334155;
+  margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+.connected {
+  display: flex;
+  align-items: center;
+}
+
+.account {
+  background: #f0fdf4;
+  color: #166534;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.text-input,
+.select-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.text-input:focus,
+.select-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+.result h3 {
+  margin-top: 0;
+  color: #334155;
+}
+
+.encrypted-output {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  font-size: 0.875rem;
+  color: #667eea;
+}
+
+.info-text {
+  margin: 1rem 0 0 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.success {
+  color: #166534;
+  background: #f0fdf4;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.info {
+  color: #1e40af;
+  background: #eff6ff;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.app-footer {
+  background: #1e293b;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.app-footer p {
+  margin: 0;
+  opacity: 0.8;
+}
